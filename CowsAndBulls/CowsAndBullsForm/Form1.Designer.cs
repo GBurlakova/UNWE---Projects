@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.numberTextBox = new System.Windows.Forms.TextBox();
             this.enterNumberButton = new System.Windows.Forms.Button();
             this.newGameButton = new System.Windows.Forms.Button();
@@ -97,6 +98,7 @@
             this.Controls.Add(this.newGameButton);
             this.Controls.Add(this.enterNumberButton);
             this.Controls.Add(this.numberTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Cows And Bulls";
             this.ResumeLayout(false);
