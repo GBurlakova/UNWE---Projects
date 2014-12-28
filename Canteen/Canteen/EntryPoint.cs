@@ -2,6 +2,7 @@
 {
     using System;
     using System.Windows.Forms;
+    using Canteen.Forms;
 
     static class EntryPoint
     {

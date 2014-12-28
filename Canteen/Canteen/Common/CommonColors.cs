@@ -4,7 +4,7 @@
     {
         BackgroundGrey,
         DarkGrey,
-        FontColor,
+        GreyFontColor,
         Blue
     }
 }

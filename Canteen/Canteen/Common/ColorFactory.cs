@@ -2,7 +2,7 @@
 {
     using System.Drawing;
 
-    public class ColorFactory
+    public static class ColorFactory
     {
         public static Color GetColor(CommonColors color)
         {
@@ -12,7 +12,7 @@
                     return Color.FromArgb(255, 227, 227, 227);
                 case CommonColors.DarkGrey:
                     return Color.FromArgb(255, 57, 70, 76);
-                case CommonColors.FontColor:
+                case CommonColors.GreyFontColor:
                     return Color.FromArgb(255, 47, 56, 61);
                 default:
                     return Color.FromArgb(50, 1, 156, 217);

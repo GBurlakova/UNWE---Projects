@@ -2,7 +2,7 @@
 {
     using System.Drawing;
 
-    public class FontFactory
+    public static class FontFactory
     {
         public static Font GetFont(CommonFonts font, int fontSize = 24)
         {
