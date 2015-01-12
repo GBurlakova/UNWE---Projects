@@ -20,5 +20,14 @@
 
             return isValidInput;
         }
+
+        public static DialogResult ConfirmAction(string confirmMessage)
+        {
+            DialogResult confirmResult = 
+                MessageBox.Show(
+                    confirmMessage, Constants.ConfimrButtonText, MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+            return confirmResult;
+        }
     }
 }

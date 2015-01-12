@@ -59,5 +59,19 @@
             aboutScreen.StartPosition = FormStartPosition.CenterParent;
             aboutScreen.Show();
         }
+
+        private void newProductMenuItem_Click(object sender, EventArgs e)
+        {
+            var newProductForm = new NewProduct();
+            newProductForm.MdiParent = this;
+            newProductForm.Show();
+        }
+
+        private void productsListMenuItem_Click(object sender, EventArgs e)
+        {
+            var allProducts = new AllProducts();
+            allProducts.StartPosition = FormStartPosition.CenterScreen;
+            allProducts.ShowDialog();
+        }
     }
 }

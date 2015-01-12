@@ -12,10 +12,16 @@
         private const string FormTitle = "Вход";
         private const int FormWidth = 650;
         private const int FormHeight = 520;
+        private const string SampleUsername = "maria";
+        private const string SamplePassword = "123456";
 
         public Login()
         {
             InitializeComponent();
+            // For test usage
+            username.Text = SampleUsername;
+            password.Text = SamplePassword;
+
             // Form settings
             this.Width = FormWidth;
             this.Height = FormHeight;

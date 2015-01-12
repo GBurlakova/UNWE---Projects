@@ -14,5 +14,14 @@
         public const string SuccessfulRegisterMessage = "Успешна регистрация";
         public const string AboutInformation =
             "Разработил: {0}{5}Факултетен номер: {1}{5}Специалнос: {2}{5}Поток: {3}{5}Група: {4}{5}";
+        public const string RequiredProductNameMessage = "Моля въведете име на продукт";
+        public const string RequiredMeasurementUnitMessage = "Моля въведетe мерна единица";
+        public const string ProductNameToopTip = "Наимeнование на продукт";
+        public const string MeasurementToopTip = "Мерна единица";
+        public const string ConfirmCreateNewProduct = "Потвърждавате ли добяването на нов продукт?";
+        public const string ConfimrButtonText = "Потърждаване";
+        public const string NewProductCreatedSuccessfullyMessage = "Успешно добавихте нов продукт";
+        public const string DeleteProductConfirmMessage = "Потвърждавате ли изтриването на проудкт?";
+        public const string ProductDeletedSuccessfullyMessage = "Продуктът е изтрит успешно";
     }
 }
