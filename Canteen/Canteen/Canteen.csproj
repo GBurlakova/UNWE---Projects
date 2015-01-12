@@ -93,6 +93,12 @@
     <Compile Include="Forms\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SearchProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchProducts.Designer.cs">
+      <DependentUpon>SearchProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AboutScreen.resx">
       <DependentUpon>AboutScreen.cs</DependentUpon>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchProducts.resx">
+      <DependentUpon>SearchProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

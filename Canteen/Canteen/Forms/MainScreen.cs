@@ -73,5 +73,12 @@
             allProducts.StartPosition = FormStartPosition.CenterScreen;
             allProducts.ShowDialog();
         }
+
+        private void търсенеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var searchProductsForm = new SearchProducts();
+            searchProductsForm.MdiParent = this;
+            searchProductsForm.Show();
+        }
     }
 }
