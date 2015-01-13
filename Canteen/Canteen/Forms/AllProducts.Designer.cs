@@ -43,7 +43,7 @@
             this.productCode = new System.Windows.Forms.TextBox();
             this.productName = new System.Windows.Forms.TextBox();
             this.measurementUnitLabel = new System.Windows.Forms.Label();
-            this.mesurementUnit = new System.Windows.Forms.TextBox();
+            this.measurementUnit = new System.Windows.Forms.TextBox();
             this.modificationDate = new System.Windows.Forms.DateTimePicker();
             this.productsTableAdapter = new Canteen.CanteenDataSetTableAdapters.ПродуктиTableAdapter();
             this.tableAdapterManager = new Canteen.CanteenDataSetTableAdapters.TableAdapterManager();
@@ -78,7 +78,7 @@
             this.contentWrapper.Controls.Add(productNameLabel);
             this.contentWrapper.Controls.Add(this.productName);
             this.contentWrapper.Controls.Add(this.measurementUnitLabel);
-            this.contentWrapper.Controls.Add(this.mesurementUnit);
+            this.contentWrapper.Controls.Add(this.measurementUnit);
             this.contentWrapper.Controls.Add(modificationDateLabel);
             this.contentWrapper.Controls.Add(this.modificationDate);
             this.contentWrapper.Location = new System.Drawing.Point(12, 12);
@@ -213,13 +213,13 @@
             this.measurementUnitLabel.TabIndex = 4;
             this.measurementUnitLabel.Text = "Мерна eдиница:";
             // 
-            // mesurementUnit
+            // measurementUnit
             // 
-            this.mesurementUnit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "МернаЕдиница", true));
-            this.mesurementUnit.Location = new System.Drawing.Point(284, 94);
-            this.mesurementUnit.Name = "mesurementUnit";
-            this.mesurementUnit.Size = new System.Drawing.Size(200, 20);
-            this.mesurementUnit.TabIndex = 5;
+            this.measurementUnit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "МернаЕдиница", true));
+            this.measurementUnit.Location = new System.Drawing.Point(284, 94);
+            this.measurementUnit.Name = "measurementUnit";
+            this.measurementUnit.Size = new System.Drawing.Size(200, 20);
+            this.measurementUnit.TabIndex = 5;
             // 
             // modificationDateLabel
             // 
@@ -398,7 +398,7 @@
         private System.Windows.Forms.Label productCodeLabel;
         private System.Windows.Forms.TextBox productName;
         private System.Windows.Forms.Label productNameLabel;
-        private System.Windows.Forms.TextBox mesurementUnit;
+        private System.Windows.Forms.TextBox measurementUnit;
         private System.Windows.Forms.Label measurementUnitLabel;
         private System.Windows.Forms.DateTimePicker modificationDate;
         private System.Windows.Forms.Label modificationDateLabel;

@@ -111,7 +111,7 @@
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = CommonUserInteractionMethods.ConfirmAction(Constants.DeleteProductConfirmMessage);
+            DialogResult result = CommonUserInteractionMethods.ConfirmAction(Constants.ConfirmEditProductMessage);
 
             if (result.Equals(DialogResult.OK))
             {
@@ -123,7 +123,7 @@
                     {
                         connection.Open();
                         SqlDataReader reader = productEditCommand.ExecuteReader();
-                        MessageBox.Show(Constants.ProductDeletedSuccessfullyMessage);
+                        MessageBox.Show(Constants.ProductEditedSuccessfullyMessage);
                         this.productsTableAdapter.Fill(this.canteenDataSet.Продукти);
                     }
                     catch (SqlException se)
@@ -153,7 +153,7 @@
             productEditCommand.Parameters.Add(ProductName);
 
             SqlParameter MeasurementUnit = new SqlParameter("@measurementUnit", SqlDbType.NVarChar);
-            MeasurementUnit.Value = productCode.Text;
+            MeasurementUnit.Value = measurementUnit.Text;
             productEditCommand.Parameters.Add(MeasurementUnit);
 
             return productEditCommand;

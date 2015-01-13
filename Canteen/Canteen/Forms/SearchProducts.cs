@@ -1,5 +1,6 @@
 ﻿namespace Canteen.Forms
 {
+    using System;
     using System.Data;
     using System.Data.SqlClient;
     using System.Drawing;
@@ -43,6 +44,10 @@
             clearFiltersButton.Font = FontFactory.GetFont(CommonFonts.DefauldGeorgia, 12);
             clearFiltersButton.ForeColor = ColorFactory.GetColor(CommonColors.BackgroundGrey);
             clearFiltersButton.BackColor = ColorFactory.GetColor(CommonColors.DarkGrey);
+            // Menu strip
+            toolStrip.BackColor = ColorFactory.GetColor(CommonColors.DarkGrey);
+            toolStrip.Font = FontFactory.GetFont(CommonFonts.DefauldGeorgia, 12);
+            toolStrip.ForeColor = ColorFactory.GetColor(CommonColors.BackgroundGrey);
         }
 
         private void searchButton_Click(object sender, System.EventArgs e)
@@ -106,5 +111,72 @@
 
             return searchProducts;
         }
+
+        private void productsTable_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string productId = productsTable.CurrentRow.Cells[0].Value.ToString();
+            string productName = productsTable.CurrentRow.Cells[1].Value.ToString();
+            string measumentUnit = productsTable.CurrentRow.Cells[2].Value.ToString();
+            string date = DateTime.Parse(productsTable.CurrentRow.Cells[3].Value.ToString()).ToShortDateString();
+            var editProductForm = new EditProduct(productId, productName, measumentUnit, date);
+            editProductForm.ShowDialog();
+        }
+
+        private void clearFiltersButton_Click(object sender, EventArgs e)
+        {
+            productName.Clear();
+            measurementUnit.Clear();
+            productsTable.DataSource = null;
+        }
+
+        private void newProductButton_Click(object sender, EventArgs e)
+        {
+            var newProductForm = new NewProduct();
+            newProductForm.StartPosition = FormStartPosition.CenterScreen;
+            newProductForm.Show();
+            this.Close();
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = CommonUserInteractionMethods.ConfirmAction(Constants.DeleteProductConfirmMessage);
+
+            if (result.Equals(DialogResult.OK))
+            {
+                SqlConnection connection = CommonDatabaseActions.CreateDatabaseConnection("Canteen");
+                using (connection)
+                {
+                    SqlCommand productInsertionCommand = CreateProductDeleteCommand(connection);
+                    try
+                    {
+                        connection.Open();
+                        SqlDataReader reader = productInsertionCommand.ExecuteReader();
+                        MessageBox.Show(Constants.ProductDeletedSuccessfullyMessage);
+                    }
+                    catch (SqlException se)
+                    {
+                        MessageBox.Show(se.ToString());
+                    }
+                    finally
+                    {
+                        connection.Close();
+                    }
+                }
+            }
+        }
+
+        private SqlCommand CreateProductDeleteCommand(SqlConnection connection)
+        {
+            SqlCommand productDeleteCommand = new SqlCommand("DeleteProduct", connection);
+            productDeleteCommand.CommandType = CommandType.StoredProcedure;
+            productDeleteCommand.CommandText = "DeleteProduct";
+
+            SqlParameter ProductCode = new SqlParameter("@productCode", SqlDbType.Int);
+            ProductCode.Value = Int32.Parse(productsTable.CurrentRow.Cells[0].Value.ToString());
+            productDeleteCommand.Parameters.Add(ProductCode);
+
+            return productDeleteCommand;
+        }
+
     }
 }

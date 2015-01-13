@@ -50,7 +50,7 @@
 
             if (isValidProductData)
             {
-                DialogResult confirmResult = CommonUserInteractionMethods.ConfirmAction(Constants.ConfirmCreateNewProduct);
+                DialogResult confirmResult = CommonUserInteractionMethods.ConfirmAction(Constants.ConfirmCreateNewProductMessage);
 
                 if (confirmResult.Equals(DialogResult.OK))
                 {

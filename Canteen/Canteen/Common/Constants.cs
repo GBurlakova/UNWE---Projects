@@ -1,7 +1,5 @@
 ﻿namespace Canteen.Common
 {
-    using System;
-
     public static class Constants
     {
         public const double WrapperSizeCoefficient = 0.9;
@@ -18,10 +16,12 @@
         public const string RequiredMeasurementUnitMessage = "Моля въведетe мерна единица";
         public const string ProductNameToopTip = "Наимeнование на продукт";
         public const string MeasurementToopTip = "Мерна единица";
-        public const string ConfirmCreateNewProduct = "Потвърждавате ли добяването на нов продукт?";
+        public const string ConfirmCreateNewProductMessage = "Потвърждавате ли добяването на нов продукт?";
         public const string ConfimrButtonText = "Потърждаване";
         public const string NewProductCreatedSuccessfullyMessage = "Успешно добавихте нов продукт";
         public const string DeleteProductConfirmMessage = "Потвърждавате ли изтриването на проудкт?";
         public const string ProductDeletedSuccessfullyMessage = "Продуктът е изтрит успешно";
+        public const string ConfirmEditProductMessage = "Потвърждавате ли редактирането на продукт?";
+        public const string ProductEditedSuccessfullyMessage = "Продуктът е редактиран успешно";
     }
 }
