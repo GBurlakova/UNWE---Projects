@@ -32,6 +32,7 @@
             this.contentWrapper = new System.Windows.Forms.Panel();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.deleteButton = new System.Windows.Forms.ToolStripButton();
+            this.newProductButton = new System.Windows.Forms.ToolStripButton();
             this.clearFiltersButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
             this.measurementUnit = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@
             this.productsTable = new System.Windows.Forms.DataGridView();
             this.productNameLabel = new System.Windows.Forms.Label();
             this.productName = new System.Windows.Forms.TextBox();
-            this.newProductButton = new System.Windows.Forms.ToolStripButton();
             this.contentWrapper.SuspendLayout();
             this.toolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsTable)).BeginInit();
@@ -78,6 +78,16 @@
             this.deleteButton.Size = new System.Drawing.Size(51, 22);
             this.deleteButton.Text = "Изтрий";
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
+            // newProductButton
+            // 
+            this.newProductButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.newProductButton.Image = ((System.Drawing.Image)(resources.GetObject("newProductButton.Image")));
+            this.newProductButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newProductButton.Name = "newProductButton";
+            this.newProductButton.Size = new System.Drawing.Size(80, 22);
+            this.newProductButton.Text = "Нов продукт";
+            this.newProductButton.Click += new System.EventHandler(this.newProductButton_Click);
             // 
             // clearFiltersButton
             // 
@@ -130,7 +140,7 @@
             this.productsTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.productsTable.Size = new System.Drawing.Size(635, 150);
             this.productsTable.TabIndex = 3;
-            this.productsTable.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsTable_CellContentDoubleClick);
+            this.productsTable.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsTable_CellDoubleClick);
             // 
             // productNameLabel
             // 
@@ -148,16 +158,6 @@
             this.productName.Name = "productName";
             this.productName.Size = new System.Drawing.Size(203, 20);
             this.productName.TabIndex = 0;
-            // 
-            // newProductButton
-            // 
-            this.newProductButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.newProductButton.Image = ((System.Drawing.Image)(resources.GetObject("newProductButton.Image")));
-            this.newProductButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newProductButton.Name = "newProductButton";
-            this.newProductButton.Size = new System.Drawing.Size(80, 22);
-            this.newProductButton.Text = "Нов продукт";
-            this.newProductButton.Click += new System.EventHandler(this.newProductButton_Click);
             // 
             // SearchProducts
             // 

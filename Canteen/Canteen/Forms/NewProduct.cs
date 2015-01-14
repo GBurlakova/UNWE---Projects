@@ -40,8 +40,8 @@
             newProductButton.ForeColor = ColorFactory.GetColor(CommonColors.BackgroundGrey);
             newProductButton.BackColor = ColorFactory.GetColor(CommonColors.DarkGrey);
             // Set tool tips
-            this.toolTip.SetToolTip(productName, Constants.ProductNameToopTip);
-            this.toolTip.SetToolTip(measurementUnit, Constants.MeasurementToopTip);
+            this.toolTip.SetToolTip(productName, Constants.ProductNameToolTip);
+            this.toolTip.SetToolTip(measurementUnit, Constants.MeasurementToolTip);
         }
 
         private void newProductButton_Click(object newProductButtonSender, EventArgs e)

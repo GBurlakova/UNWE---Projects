@@ -80,5 +80,26 @@
             searchProductsForm.MdiParent = this;
             searchProductsForm.Show();
         }
+
+        private void mealsListMenuItem_Click(object sender, EventArgs e)
+        {
+            var mealsForm = new AllMeals();
+            mealsForm.MdiParent = this;
+            mealsForm.Show();
+        }
+
+        private void newMealMenuItem_Click(object sender, EventArgs e)
+        {
+            var newMealForm = new NewMeal();
+            newMealForm.MdiParent = this;
+            newMealForm.Show();
+        }
+
+        private void searchMenuItem_Click(object sender, EventArgs e)
+        {
+            var searchMealsForm = new SearchMeals();
+            searchMealsForm.MdiParent = this;
+            searchMealsForm.Show();
+        }
     }
 }

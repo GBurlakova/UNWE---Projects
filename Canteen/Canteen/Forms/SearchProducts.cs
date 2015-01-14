@@ -9,7 +9,7 @@
 
     public partial class SearchProducts : Form
     {
-        private const string FormTitle = "Продукти";
+        private const string FormTitle = "Търсене на продукти";
         private const int FormWidth = 750;
         private const int FormHeight = 500;
 
@@ -112,16 +112,6 @@
             return searchProducts;
         }
 
-        private void productsTable_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string productId = productsTable.CurrentRow.Cells[0].Value.ToString();
-            string productName = productsTable.CurrentRow.Cells[1].Value.ToString();
-            string measumentUnit = productsTable.CurrentRow.Cells[2].Value.ToString();
-            string date = DateTime.Parse(productsTable.CurrentRow.Cells[3].Value.ToString()).ToShortDateString();
-            var editProductForm = new EditProduct(productId, productName, measumentUnit, date);
-            editProductForm.ShowDialog();
-        }
-
         private void clearFiltersButton_Click(object sender, EventArgs e)
         {
             productName.Clear();
@@ -176,6 +166,16 @@
             productDeleteCommand.Parameters.Add(ProductCode);
 
             return productDeleteCommand;
+        }
+
+        private void productsTable_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string productId = productsTable.CurrentRow.Cells[0].Value.ToString();
+            string productName = productsTable.CurrentRow.Cells[1].Value.ToString();
+            string measumentUnit = productsTable.CurrentRow.Cells[2].Value.ToString();
+            string date = DateTime.Parse(productsTable.CurrentRow.Cells[3].Value.ToString()).ToShortDateString();
+            var editProductForm = new EditProduct(productId, productName, measumentUnit, date);
+            editProductForm.ShowDialog();
         }
 
     }

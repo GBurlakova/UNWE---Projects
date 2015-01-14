@@ -63,6 +63,12 @@
     <Compile Include="Forms\AboutScreen.Designer.cs">
       <DependentUpon>AboutScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AllMeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AllMeals.Designer.cs">
+      <DependentUpon>AllMeals.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AllProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     <Compile Include="Forms\MainScreen.Designer.cs">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\NewMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewMeal.Designer.cs">
+      <DependentUpon>NewMeal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\NewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,15 +111,30 @@
     <Compile Include="Forms\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SearchMeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchMeals.Designer.cs">
+      <DependentUpon>SearchMeals.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SearchProducts.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\SearchProducts.Designer.cs">
       <DependentUpon>SearchProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EditMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditMeal.Designer.cs">
+      <DependentUpon>EditMeal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AboutScreen.resx">
       <DependentUpon>AboutScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AllMeals.resx">
+      <DependentUpon>AllMeals.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AllProducts.resx">
       <DependentUpon>AllProducts.cs</DependentUpon>
@@ -121,14 +148,23 @@
     <EmbeddedResource Include="Forms\MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewMeal.resx">
+      <DependentUpon>NewMeal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\NewProduct.resx">
       <DependentUpon>NewProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchMeals.resx">
+      <DependentUpon>SearchMeals.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SearchProducts.resx">
       <DependentUpon>SearchProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditMeal.resx">
+      <DependentUpon>EditMeal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

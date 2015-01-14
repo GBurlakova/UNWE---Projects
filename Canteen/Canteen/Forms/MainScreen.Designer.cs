@@ -31,9 +31,12 @@
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.продуктиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newProductMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productsListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mealsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newMealMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mealsListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.каскадноПодрежданеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вертикалноПодрежданеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,8 +44,6 @@
             this.затварянеНаВсичкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productsListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,11 +77,26 @@
             this.newProductMenuItem.Text = "Добавяне на продукт";
             this.newProductMenuItem.Click += new System.EventHandler(this.newProductMenuItem_Click);
             // 
+            // productsListMenuItem
+            // 
+            this.productsListMenuItem.Name = "productsListMenuItem";
+            this.productsListMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.productsListMenuItem.Text = "Списък";
+            this.productsListMenuItem.Click += new System.EventHandler(this.productsListMenuItem_Click);
+            // 
+            // searchProductsToolStripMenuItem
+            // 
+            this.searchProductsToolStripMenuItem.Name = "searchProductsToolStripMenuItem";
+            this.searchProductsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.searchProductsToolStripMenuItem.Text = "Търсене";
+            this.searchProductsToolStripMenuItem.Click += new System.EventHandler(this.търсенеToolStripMenuItem_Click);
+            // 
             // mealsMenuItem
             // 
             this.mealsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newMealMenuItem,
-            this.mealsListMenuItem});
+            this.mealsListMenuItem,
+            this.searchMenuItem});
             this.mealsMenuItem.Name = "mealsMenuItem";
             this.mealsMenuItem.Size = new System.Drawing.Size(50, 20);
             this.mealsMenuItem.Text = "Ястия";
@@ -90,12 +106,21 @@
             this.newMealMenuItem.Name = "newMealMenuItem";
             this.newMealMenuItem.Size = new System.Drawing.Size(176, 22);
             this.newMealMenuItem.Text = "Добавяне на ястие";
+            this.newMealMenuItem.Click += new System.EventHandler(this.newMealMenuItem_Click);
             // 
             // mealsListMenuItem
             // 
             this.mealsListMenuItem.Name = "mealsListMenuItem";
             this.mealsListMenuItem.Size = new System.Drawing.Size(176, 22);
             this.mealsListMenuItem.Text = "Списък";
+            this.mealsListMenuItem.Click += new System.EventHandler(this.mealsListMenuItem_Click);
+            // 
+            // searchMenuItem
+            // 
+            this.searchMenuItem.Name = "searchMenuItem";
+            this.searchMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.searchMenuItem.Text = "Търсене";
+            this.searchMenuItem.Click += new System.EventHandler(this.searchMenuItem_Click);
             // 
             // windowsMenuItem
             // 
@@ -151,20 +176,6 @@
             this.aboutMenuItem.Text = "За продукта";
             this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
             // 
-            // productsListMenuItem
-            // 
-            this.productsListMenuItem.Name = "productsListMenuItem";
-            this.productsListMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.productsListMenuItem.Text = "Списък";
-            this.productsListMenuItem.Click += new System.EventHandler(this.productsListMenuItem_Click);
-            // 
-            // searchProductsToolStripMenuItem
-            // 
-            this.searchProductsToolStripMenuItem.Name = "searchProductsToolStripMenuItem";
-            this.searchProductsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.searchProductsToolStripMenuItem.Text = "Търсене";
-            this.searchProductsToolStripMenuItem.Click += new System.EventHandler(this.търсенеToolStripMenuItem_Click);
-            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,6 +210,7 @@
         private System.Windows.Forms.ToolStripMenuItem newProductMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productsListMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchProductsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchMenuItem;
 
     }
 }
