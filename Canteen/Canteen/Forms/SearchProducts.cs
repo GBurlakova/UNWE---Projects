@@ -129,7 +129,7 @@
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = CommonUserInteractionMethods.ConfirmAction(Constants.DeleteProductConfirmMessage);
+            DialogResult result = CommonUserInteractionMethods.ConfirmAction(Constants.ConfirmDeleteProductMessage);
 
             if (result.Equals(DialogResult.OK))
             {

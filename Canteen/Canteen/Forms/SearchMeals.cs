@@ -118,7 +118,7 @@
             SqlParameter MealName = new SqlParameter("@mealName", SqlDbType.NVarChar);
             if (string.IsNullOrEmpty(mealName.Text))
             {
-                MealName.Value = null;
+                MealName.Value = DBNull.Value;
             }
             else
             {
@@ -131,7 +131,7 @@
             SqlParameter Type = new SqlParameter("@mealType", SqlDbType.NVarChar);
             if (string.IsNullOrEmpty(type.Text))
             {
-                Type.Value = null;
+                Type.Value = DBNull.Value;
             }
             else
             {

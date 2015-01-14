@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.contentWrapper = new System.Windows.Forms.Panel();
+            this.registerButton = new System.Windows.Forms.Button();
             this.password = new System.Windows.Forms.TextBox();
             this.enterButton = new System.Windows.Forms.Button();
             this.username = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.usernameLabel = new System.Windows.Forms.Label();
             this.enterLabel = new System.Windows.Forms.Label();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
-            this.registerButton = new System.Windows.Forms.Button();
             this.contentWrapper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,18 @@
             this.contentWrapper.Name = "contentWrapper";
             this.contentWrapper.Size = new System.Drawing.Size(610, 458);
             this.contentWrapper.TabIndex = 2;
+            // 
+            // registerButton
+            // 
+            this.registerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.registerButton.Location = new System.Drawing.Point(210, 366);
+            this.registerButton.Name = "registerButton";
+            this.registerButton.Size = new System.Drawing.Size(185, 57);
+            this.registerButton.TabIndex = 4;
+            this.registerButton.Text = "Регистрация";
+            this.registerButton.UseVisualStyleBackColor = true;
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // password
             // 
@@ -116,18 +128,6 @@
             // 
             this.error.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.error.ContainerControl = this;
-            // 
-            // registerButton
-            // 
-            this.registerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.registerButton.Location = new System.Drawing.Point(210, 366);
-            this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(185, 57);
-            this.registerButton.TabIndex = 4;
-            this.registerButton.Text = "Регистрация";
-            this.registerButton.UseVisualStyleBackColor = true;
-            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // Login
             // 

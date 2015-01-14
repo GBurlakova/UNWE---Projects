@@ -65,7 +65,6 @@
         {
             // TODO: This line of code loads data into the 'canteenDataSet.Ястия' table. You can move, or remove it, as needed.
             this.mealsTableAdapter.Fill(this.canteenDataSet.Ястия);
-
         }
 
         private void editButton_Click(object sender, System.EventArgs e)

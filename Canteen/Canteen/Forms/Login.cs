@@ -48,7 +48,7 @@
             enterButton.Font = FontFactory.GetFont(CommonFonts.DefauldGeorgia, 20);
             enterButton.ForeColor = ColorFactory.GetColor(CommonColors.BackgroundGrey);
             enterButton.BackColor = ColorFactory.GetColor(CommonColors.DarkGrey);
-            // Passwod textbox
+            // Password textbox
             password.PasswordChar = '*';
             password.MaxLength = 20;
             // Register button

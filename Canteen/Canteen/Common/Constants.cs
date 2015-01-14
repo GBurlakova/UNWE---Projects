@@ -19,7 +19,7 @@
         public const string ConfirmCreateNewProductMessage = "Потвърждавате ли добяването на нов продукт?";
         public const string ConfimrButtonText = "Потърждаване";
         public const string NewProductCreatedSuccessfullyMessage = "Успешно добавихте нов продукт";
-        public const string DeleteProductConfirmMessage = "Потвърждавате ли изтриването на проудкт?";
+        public const string ConfirmDeleteProductMessage = "Потвърждавате ли изтриването на проудкт?";
         public const string ProductDeletedSuccessfullyMessage = "Продуктът е изтрит успешно";
         public const string ConfirmEditProductMessage = "Потвърждавате ли редактирането на продукт?";
         public const string ProductEditedSuccessfullyMessage = "Продуктът е редактиран успешно";
@@ -39,6 +39,23 @@
         public const string TypeToolTip = "Тип на ястието";
         public const string CaloriesToolTip = "Калории за ястието";
         public const string PortionsToolTip = "Брой порции за ястието";
-        public const string InvalidMealDataFormat = "Моля уверете се, че форматът на въведените от Вас данни е правилен";
+        public const string InvalidMealDataFormat =
+            "Моля уверете се, че форматът на въведените от Вас данни е правилен";
+        public const string ConfirmDeleteRecipeMessage = "Потвърждавате ли изтриването на данните за рецептата?";
+        public const string RecipeDeletedSuccessfullyMessage = "Данните за рецептата са изтрити успешно?";
+        public const string ConfirmAddProductToRecipeMessage =
+            "Потвърждавате ли добавянето на продукта към рецептата?";
+        public const string ProductDeletedFromRecipeSuccessfullyMessage =
+            "Продуктът е премахнат успешно от рецептата";
+        public const string InvalidRecipeProductDataMessage =
+            "Данните за продукта са невалидни. Моля опитайте отново!";
+        public const string ConfirmDeleteRecipeProductMesssage =
+            "Потвърждавате ли изтриването на продукта от рецептата";
+        public const string RecipeProductDeletedSuccessfullyMessage =
+            "Продуктът е премахнат успешно от рецептата";
+        public const string RecipeProductEditedSuccessfullyMessage =
+            "Продуктът е редактиран успешно";
+        public const string InvalidRecipeProductQuantityMessage =
+            "Невалиден формат за количество на продукта. Моля опитайте отново!";
     }
 }

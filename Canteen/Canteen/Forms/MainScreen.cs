@@ -101,5 +101,12 @@
             searchMealsForm.MdiParent = this;
             searchMealsForm.Show();
         }
+
+        private void списъкToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var allRecipes = new AllRecipes();
+            allRecipes.MdiParent = this;
+            allRecipes.Show();
+        }
     }
 }
