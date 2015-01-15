@@ -115,5 +115,12 @@
             newRecipeForm.MdiParent = this;
             newRecipeForm.Show();
         }
+
+        private void добавиМенюToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var newMenuForm = new NewMenu();
+            newMenuForm.MdiParent = this;
+            newMenuForm.Show();
+        }
     }
 }

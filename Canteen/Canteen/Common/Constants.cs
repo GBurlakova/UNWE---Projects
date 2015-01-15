@@ -64,5 +64,24 @@
         public const string ProductToolTip = "Продукт";
         public const string RecipeToolTip = "Ястие";
         public const string RecipeProductQuantityToolTip = "Количество";
+        // New menu constantts
+            // Tool tips
+        public const string FirstMealToolTip = "Предястие";
+        public const string FirstMealCountToolTip = "Предястие - брой";
+        public const string SecondMealToolTip = "Основно ястие";
+        public const string SecondMealCountToolTip = "Основно ястие - брой";
+        public const string ThirdMealToolTip = "Десерт";
+        public const string ThirdMealCountToolTip = "Десерт - брой";
+            // Required data messages
+        public const string RequiredFirstMealCountMessage = "Моля въведете количество за предястие";
+        public const string RequiredSecondMealCountMessage = "Моля въведете количество за основно ястие";
+        public const string RequiredThirdMealCountMessage = "Моля въведете количество за десерт";
+            // Confirm message
+        public const string ConfirmCreateNewMenuMessage = "Потвържадавате ли създането на меню?";
+            // Menu created succesfully
+        public const string MenuCreatedSuccessfullyMessage = "Менюто е създадено успешно";
+            // Invaled menu data
+        public const string InvalidMenuDateMessage =
+            "Форматът на данните за менюто е некоректен. Моля въведете данните отново!";
     }
 }

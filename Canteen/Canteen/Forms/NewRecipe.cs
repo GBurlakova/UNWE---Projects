@@ -172,6 +172,7 @@
                             connection.Open();
                             insertNewRecipeCommand.ExecuteNonQuery();
                             MessageBox.Show(Constants.RecipeInsertedSuccessfullyMessage);
+                            this.Close();
                         }
                     }
                     catch (FormatException formatException)

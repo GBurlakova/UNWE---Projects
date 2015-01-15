@@ -47,6 +47,8 @@
             this.helpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавянеНаРецептаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.менютаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавиМенюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +58,7 @@
             this.продуктиToolStripMenuItem,
             this.mealsMenuItem,
             this.рецептиToolStripMenuItem,
+            this.менютаToolStripMenuItem,
             this.windowsMenuItem,
             this.helpMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
@@ -203,6 +206,21 @@
             this.добавянеНаРецептаToolStripMenuItem.Text = "Добавяне на рецепта";
             this.добавянеНаРецептаToolStripMenuItem.Click += new System.EventHandler(this.добавянеНаРецептаToolStripMenuItem_Click);
             // 
+            // менютаToolStripMenuItem
+            // 
+            this.менютаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавиМенюToolStripMenuItem});
+            this.менютаToolStripMenuItem.Name = "менютаToolStripMenuItem";
+            this.менютаToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.менютаToolStripMenuItem.Text = "Менюта";
+            // 
+            // добавиМенюToolStripMenuItem
+            // 
+            this.добавиМенюToolStripMenuItem.Name = "добавиМенюToolStripMenuItem";
+            this.добавиМенюToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.добавиМенюToolStripMenuItem.Text = "Добави меню";
+            this.добавиМенюToolStripMenuItem.Click += new System.EventHandler(this.добавиМенюToolStripMenuItem_Click);
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,6 +259,8 @@
         private System.Windows.Forms.ToolStripMenuItem рецептиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem списъкToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem добавянеНаРецептаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem менютаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem добавиМенюToolStripMenuItem;
 
     }
 }
