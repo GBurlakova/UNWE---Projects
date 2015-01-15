@@ -37,6 +37,8 @@
             this.newMealMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mealsListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.рецептиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.списъкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.каскадноПодрежданеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вертикалноПодрежданеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,8 +46,7 @@
             this.затварянеНаВсичкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рецептиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.списъкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавянеНаРецептаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,6 +126,22 @@
             this.searchMenuItem.Text = "Търсене";
             this.searchMenuItem.Click += new System.EventHandler(this.searchMenuItem_Click);
             // 
+            // рецептиToolStripMenuItem
+            // 
+            this.рецептиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавянеНаРецептаToolStripMenuItem,
+            this.списъкToolStripMenuItem});
+            this.рецептиToolStripMenuItem.Name = "рецептиToolStripMenuItem";
+            this.рецептиToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.рецептиToolStripMenuItem.Text = "Рецепти";
+            // 
+            // списъкToolStripMenuItem
+            // 
+            this.списъкToolStripMenuItem.Name = "списъкToolStripMenuItem";
+            this.списъкToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.списъкToolStripMenuItem.Text = "Списък";
+            this.списъкToolStripMenuItem.Click += new System.EventHandler(this.списъкToolStripMenuItem_Click);
+            // 
             // windowsMenuItem
             // 
             this.windowsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -179,20 +196,12 @@
             this.aboutMenuItem.Text = "За продукта";
             this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
             // 
-            // рецептиToolStripMenuItem
+            // добавянеНаРецептаToolStripMenuItem
             // 
-            this.рецептиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.списъкToolStripMenuItem});
-            this.рецептиToolStripMenuItem.Name = "рецептиToolStripMenuItem";
-            this.рецептиToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.рецептиToolStripMenuItem.Text = "Рецепти";
-            // 
-            // списъкToolStripMenuItem
-            // 
-            this.списъкToolStripMenuItem.Name = "списъкToolStripMenuItem";
-            this.списъкToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.списъкToolStripMenuItem.Text = "Списък";
-            this.списъкToolStripMenuItem.Click += new System.EventHandler(this.списъкToolStripMenuItem_Click);
+            this.добавянеНаРецептаToolStripMenuItem.Name = "добавянеНаРецептаToolStripMenuItem";
+            this.добавянеНаРецептаToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.добавянеНаРецептаToolStripMenuItem.Text = "Добавяне на рецепта";
+            this.добавянеНаРецептаToolStripMenuItem.Click += new System.EventHandler(this.добавянеНаРецептаToolStripMenuItem_Click);
             // 
             // MainScreen
             // 
@@ -231,6 +240,7 @@
         private System.Windows.Forms.ToolStripMenuItem searchMenuItem;
         private System.Windows.Forms.ToolStripMenuItem рецептиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem списъкToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem добавянеНаРецептаToolStripMenuItem;
 
     }
 }

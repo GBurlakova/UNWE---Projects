@@ -57,5 +57,12 @@
             "Продуктът е редактиран успешно";
         public const string InvalidRecipeProductQuantityMessage =
             "Невалиден формат за количество на продукта. Моля опитайте отново!";
+        public const string ConfirmInsertNewRecipeMessage = "Потвърждавате ли добяването на нова рецепта?";
+        public const string RecipeInsertedSuccessfullyMessage = "Рецептата е добавена успешно";
+        public const string InvalidRecipeProductData = "Данните за количество не са в коректен формат. Моля въведете отново!";
+        public const string RequiredRecipeProductQuantityMessage = "Моля въведете количество за продукт";
+        public const string ProductToolTip = "Продукт";
+        public const string RecipeToolTip = "Ястие";
+        public const string RecipeProductQuantityToolTip = "Количество";
     }
 }
