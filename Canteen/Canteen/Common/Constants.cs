@@ -3,6 +3,7 @@
     public static class Constants
     {
         public const double WrapperSizeCoefficient = 0.9;
+        // Login and register screen
         public const string InvalidLoginDataMessage = "Не са открити данни за потребителя. Моля опитайте отново!";
         public const string RequiredUsernameMessage = "Моля въведете потребителско име!";
         public const string RequiredFirstNameMessage = "Моля въведете първо име!";
@@ -10,6 +11,7 @@
         public const string RequiredPasswordMessage = "Моля въведете парола!";
         public const string UsernameTakenMessage = "Потребителското име вече съществува. Моля въведете отново!";
         public const string SuccessfulRegisterMessage = "Успешна регистрация";
+        // About screen
         public const string AboutInformation =
             "Разработил: {0}{5}Факултетен номер: {1}{5}Специалнос: {2}{5}Поток: {3}{5}Група: {4}{5}";
         public const string RequiredProductNameMessage = "Моля въведете име на продукт";

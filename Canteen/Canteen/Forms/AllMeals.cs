@@ -9,7 +9,7 @@
 
     public partial class AllMeals : Form
     {
-        private const string FormTitle = "Продукти";
+        private const string FormTitle = "Ястия";
         private const int FormWidth = 900;
         private const int FormHeight = 500;
 

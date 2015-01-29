@@ -7,7 +7,7 @@
 
     public partial class AboutScreen : Form
     {
-        private const string FormTitle = "Регистрация";
+        private const string FormTitle = "За приложението";
         private const int FormWidth = 650;
         private const int FormHeight = 380;
         private const string DeveloperName = "Габриела Бурлакова";

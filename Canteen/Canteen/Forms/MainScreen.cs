@@ -2,7 +2,6 @@
 {
     using Canteen.Common;
     using System;
-    using System.Drawing;
     using System.Windows.Forms;
 
     public partial class MainScreen : Form
@@ -74,7 +73,7 @@
             allProducts.ShowDialog();
         }
 
-        private void търсенеToolStripMenuItem_Click(object sender, EventArgs e)
+        private void searchProductsMenuItem_Click(object sender, EventArgs e)
         {
             var searchProductsForm = new SearchProducts();
             searchProductsForm.MdiParent = this;
@@ -95,28 +94,28 @@
             newMealForm.Show();
         }
 
-        private void searchMenuItem_Click(object sender, EventArgs e)
+        private void searchMealsMenuItem_Click(object sender, EventArgs e)
         {
             var searchMealsForm = new SearchMeals();
             searchMealsForm.MdiParent = this;
             searchMealsForm.Show();
         }
 
-        private void списъкToolStripMenuItem_Click(object sender, EventArgs e)
+        private void recipesListMenuItem_Click(object sender, EventArgs e)
         {
             var allRecipes = new AllRecipes();
             allRecipes.MdiParent = this;
             allRecipes.Show();
         }
 
-        private void добавянеНаРецептаToolStripMenuItem_Click(object sender, EventArgs e)
+        private void newRecipeMenuItem_Click(object sender, EventArgs e)
         {
             var newRecipeForm = new NewRecipe();
             newRecipeForm.MdiParent = this;
             newRecipeForm.Show();
         }
 
-        private void добавиМенюToolStripMenuItem_Click(object sender, EventArgs e)
+        private void newMenuMenuItem_Click(object sender, EventArgs e)
         {
             var newMenuForm = new NewMenu();
             newMenuForm.MdiParent = this;

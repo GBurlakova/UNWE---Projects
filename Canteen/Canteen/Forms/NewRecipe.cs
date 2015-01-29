@@ -9,7 +9,7 @@
 
     public partial class NewRecipe : Form
     {
-        private const string FormTitle = "Вход";
+        private const string FormTitle = "Нова рецепта";
         private const int FormWidth = 455;
         private const int FormHeight = 431;
 

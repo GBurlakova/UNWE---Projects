@@ -9,7 +9,7 @@
 
     public partial class SearchMeals : Form
     {
-        private const string FormTitle = "Продукти";
+        private const string FormTitle = "Търсене на ястия";
         private const int FormWidth = 850;
         private const int FormHeight = 500;
 

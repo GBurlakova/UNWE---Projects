@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             this.mainMenu = new System.Windows.Forms.MenuStrip();
-            this.продуктиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newProductMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchProductsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mealsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newMealMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mealsListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рецептиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.списъкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recipesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newRecipeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recipesListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menusMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newMenuMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.каскадноПодрежданеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вертикалноПодрежданеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.хоризонталноПодрежданеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.затварянеНаВсичкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cascadeLayout = new System.Windows.Forms.ToolStripMenuItem();
+            this.verticalLayout = new System.Windows.Forms.ToolStripMenuItem();
+            this.horizontalLayout = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAllWindows = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавянеНаРецептаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.менютаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавиМенюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenu
             // 
             this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.продуктиToolStripMenuItem,
+            this.productsMenuItem,
             this.mealsMenuItem,
-            this.рецептиToolStripMenuItem,
-            this.менютаToolStripMenuItem,
+            this.recipesMenuItem,
+            this.menusMenuItem,
             this.windowsMenuItem,
             this.helpMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
@@ -67,15 +67,15 @@
             this.mainMenu.TabIndex = 2;
             this.mainMenu.Text = "menuStrip1";
             // 
-            // продуктиToolStripMenuItem
+            // productsMenuItem
             // 
-            this.продуктиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newProductMenuItem,
             this.productsListMenuItem,
-            this.searchProductsToolStripMenuItem});
-            this.продуктиToolStripMenuItem.Name = "продуктиToolStripMenuItem";
-            this.продуктиToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.продуктиToolStripMenuItem.Text = "Продукти";
+            this.searchProductsMenuItem});
+            this.productsMenuItem.Name = "productsMenuItem";
+            this.productsMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.productsMenuItem.Text = "Продукти";
             // 
             // newProductMenuItem
             // 
@@ -91,12 +91,12 @@
             this.productsListMenuItem.Text = "Списък";
             this.productsListMenuItem.Click += new System.EventHandler(this.productsListMenuItem_Click);
             // 
-            // searchProductsToolStripMenuItem
+            // searchProductsMenuItem
             // 
-            this.searchProductsToolStripMenuItem.Name = "searchProductsToolStripMenuItem";
-            this.searchProductsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.searchProductsToolStripMenuItem.Text = "Търсене";
-            this.searchProductsToolStripMenuItem.Click += new System.EventHandler(this.търсенеToolStripMenuItem_Click);
+            this.searchProductsMenuItem.Name = "searchProductsMenuItem";
+            this.searchProductsMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.searchProductsMenuItem.Text = "Търсене";
+            this.searchProductsMenuItem.Click += new System.EventHandler(this.searchProductsMenuItem_Click);
             // 
             // mealsMenuItem
             // 
@@ -127,62 +127,84 @@
             this.searchMenuItem.Name = "searchMenuItem";
             this.searchMenuItem.Size = new System.Drawing.Size(176, 22);
             this.searchMenuItem.Text = "Търсене";
-            this.searchMenuItem.Click += new System.EventHandler(this.searchMenuItem_Click);
+            this.searchMenuItem.Click += new System.EventHandler(this.searchMealsMenuItem_Click);
             // 
-            // рецептиToolStripMenuItem
+            // recipesMenuItem
             // 
-            this.рецептиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавянеНаРецептаToolStripMenuItem,
-            this.списъкToolStripMenuItem});
-            this.рецептиToolStripMenuItem.Name = "рецептиToolStripMenuItem";
-            this.рецептиToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.рецептиToolStripMenuItem.Text = "Рецепти";
+            this.recipesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newRecipeMenuItem,
+            this.recipesListMenuItem});
+            this.recipesMenuItem.Name = "recipesMenuItem";
+            this.recipesMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.recipesMenuItem.Text = "Рецепти";
             // 
-            // списъкToolStripMenuItem
+            // newRecipeMenuItem
             // 
-            this.списъкToolStripMenuItem.Name = "списъкToolStripMenuItem";
-            this.списъкToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.списъкToolStripMenuItem.Text = "Списък";
-            this.списъкToolStripMenuItem.Click += new System.EventHandler(this.списъкToolStripMenuItem_Click);
+            this.newRecipeMenuItem.Name = "newRecipeMenuItem";
+            this.newRecipeMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.newRecipeMenuItem.Text = "Добавяне на рецепта";
+            this.newRecipeMenuItem.Click += new System.EventHandler(this.newRecipeMenuItem_Click);
+            // 
+            // recipesListMenuItem
+            // 
+            this.recipesListMenuItem.Name = "recipesListMenuItem";
+            this.recipesListMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.recipesListMenuItem.Text = "Списък";
+            this.recipesListMenuItem.Click += new System.EventHandler(this.recipesListMenuItem_Click);
+            // 
+            // menusMenuItem
+            // 
+            this.menusMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newMenuMenuItem});
+            this.menusMenuItem.Name = "menusMenuItem";
+            this.menusMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.menusMenuItem.Text = "Менюта";
+            // 
+            // newMenuMenuItem
+            // 
+            this.newMenuMenuItem.Name = "newMenuMenuItem";
+            this.newMenuMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newMenuMenuItem.Text = "Добави меню";
+            this.newMenuMenuItem.Click += new System.EventHandler(this.newMenuMenuItem_Click);
             // 
             // windowsMenuItem
             // 
             this.windowsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.каскадноПодрежданеToolStripMenuItem,
-            this.вертикалноПодрежданеToolStripMenuItem,
-            this.хоризонталноПодрежданеToolStripMenuItem,
-            this.затварянеНаВсичкиToolStripMenuItem});
+            this.cascadeLayout,
+            this.verticalLayout,
+            this.horizontalLayout,
+            this.closeAllWindows});
             this.windowsMenuItem.Name = "windowsMenuItem";
             this.windowsMenuItem.Size = new System.Drawing.Size(75, 20);
             this.windowsMenuItem.Text = "Прозорци";
             // 
-            // каскадноПодрежданеToolStripMenuItem
+            // cascadeLayout
             // 
-            this.каскадноПодрежданеToolStripMenuItem.Name = "каскадноПодрежданеToolStripMenuItem";
-            this.каскадноПодрежданеToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.каскадноПодрежданеToolStripMenuItem.Text = "Каскадно подреждане";
-            this.каскадноПодрежданеToolStripMenuItem.Click += new System.EventHandler(this.cascadeLayoutMenuItem_Click);
+            this.cascadeLayout.Name = "cascadeLayout";
+            this.cascadeLayout.Size = new System.Drawing.Size(223, 22);
+            this.cascadeLayout.Text = "Каскадно подреждане";
+            this.cascadeLayout.Click += new System.EventHandler(this.cascadeLayoutMenuItem_Click);
             // 
-            // вертикалноПодрежданеToolStripMenuItem
+            // verticalLayout
             // 
-            this.вертикалноПодрежданеToolStripMenuItem.Name = "вертикалноПодрежданеToolStripMenuItem";
-            this.вертикалноПодрежданеToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.вертикалноПодрежданеToolStripMenuItem.Text = "Вертикално подреждане";
-            this.вертикалноПодрежданеToolStripMenuItem.Click += new System.EventHandler(this.verticalLayoutMenuItem_Click);
+            this.verticalLayout.Name = "verticalLayout";
+            this.verticalLayout.Size = new System.Drawing.Size(223, 22);
+            this.verticalLayout.Text = "Вертикално подреждане";
+            this.verticalLayout.Click += new System.EventHandler(this.verticalLayoutMenuItem_Click);
             // 
-            // хоризонталноПодрежданеToolStripMenuItem
+            // horizontalLayout
             // 
-            this.хоризонталноПодрежданеToolStripMenuItem.Name = "хоризонталноПодрежданеToolStripMenuItem";
-            this.хоризонталноПодрежданеToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.хоризонталноПодрежданеToolStripMenuItem.Text = "Хоризонтално подреждане";
-            this.хоризонталноПодрежданеToolStripMenuItem.Click += new System.EventHandler(this.horizontalLayoutMenuItem_Click);
+            this.horizontalLayout.Name = "horizontalLayout";
+            this.horizontalLayout.Size = new System.Drawing.Size(223, 22);
+            this.horizontalLayout.Text = "Хоризонтално подреждане";
+            this.horizontalLayout.Click += new System.EventHandler(this.horizontalLayoutMenuItem_Click);
             // 
-            // затварянеНаВсичкиToolStripMenuItem
+            // closeAllWindows
             // 
-            this.затварянеНаВсичкиToolStripMenuItem.Name = "затварянеНаВсичкиToolStripMenuItem";
-            this.затварянеНаВсичкиToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.затварянеНаВсичкиToolStripMenuItem.Text = "Затваряне на всички";
-            this.затварянеНаВсичкиToolStripMenuItem.Click += new System.EventHandler(this.closeAllWindowsMenuItem_Click);
+            this.closeAllWindows.Name = "closeAllWindows";
+            this.closeAllWindows.Size = new System.Drawing.Size(223, 22);
+            this.closeAllWindows.Text = "Затваряне на всички";
+            this.closeAllWindows.Click += new System.EventHandler(this.closeAllWindowsMenuItem_Click);
             // 
             // helpMenuItem
             // 
@@ -195,31 +217,9 @@
             // aboutMenuItem
             // 
             this.aboutMenuItem.Name = "aboutMenuItem";
-            this.aboutMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.aboutMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutMenuItem.Text = "За продукта";
             this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
-            // 
-            // добавянеНаРецептаToolStripMenuItem
-            // 
-            this.добавянеНаРецептаToolStripMenuItem.Name = "добавянеНаРецептаToolStripMenuItem";
-            this.добавянеНаРецептаToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.добавянеНаРецептаToolStripMenuItem.Text = "Добавяне на рецепта";
-            this.добавянеНаРецептаToolStripMenuItem.Click += new System.EventHandler(this.добавянеНаРецептаToolStripMenuItem_Click);
-            // 
-            // менютаToolStripMenuItem
-            // 
-            this.менютаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавиМенюToolStripMenuItem});
-            this.менютаToolStripMenuItem.Name = "менютаToolStripMenuItem";
-            this.менютаToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.менютаToolStripMenuItem.Text = "Менюта";
-            // 
-            // добавиМенюToolStripMenuItem
-            // 
-            this.добавиМенюToolStripMenuItem.Name = "добавиМенюToolStripMenuItem";
-            this.добавиМенюToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.добавиМенюToolStripMenuItem.Text = "Добави меню";
-            this.добавиМенюToolStripMenuItem.Click += new System.EventHandler(this.добавиМенюToolStripMenuItem_Click);
             // 
             // MainScreen
             // 
@@ -245,22 +245,22 @@
         private System.Windows.Forms.ToolStripMenuItem mealsListMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newMealMenuItem;
         private System.Windows.Forms.ToolStripMenuItem windowsMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem каскадноПодрежданеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вертикалноПодрежданеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem хоризонталноПодрежданеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem затварянеНаВсичкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cascadeLayout;
+        private System.Windows.Forms.ToolStripMenuItem verticalLayout;
+        private System.Windows.Forms.ToolStripMenuItem horizontalLayout;
+        private System.Windows.Forms.ToolStripMenuItem closeAllWindows;
         private System.Windows.Forms.ToolStripMenuItem helpMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem продуктиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productsMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newProductMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productsListMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchProductsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchProductsMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рецептиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem списъкToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem добавянеНаРецептаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem менютаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem добавиМенюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recipesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recipesListMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newRecipeMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menusMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newMenuMenuItem;
 
     }
 }
