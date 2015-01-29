@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2EF9132-6376-456D-B961-2174EA1A776E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LanguageSchool</RootNamespace>
+    <AssemblyName>LanguageSchool</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFormActions.cs" />
+    <Compile Include="StudentsAddToAGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsAddToAGroup.Designer.cs">
+      <DependentUpon>StudentsAddToAGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsAll.Designer.cs">
+      <DependentUpon>StudentsAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntryPoint.cs" />
+    <Compile Include="LanguageSchoolDataSet.cs">
+      <DependentUpon>LanguageSchoolDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LanguageSchoolDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageSchoolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentsByGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsByGroups.Designer.cs">
+      <DependentUpon>StudentsByGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsSearch.Designer.cs">
+      <DependentUpon>StudentsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersAddEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersAddEducation.Designer.cs">
+      <DependentUpon>TeachersAddEducation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersAssignGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersAssignGroup.Designer.cs">
+      <DependentUpon>TeachersAssignGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersSearch.Designer.cs">
+      <DependentUpon>TeachersSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersByGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersByGroups.Designer.cs">
+      <DependentUpon>TeachersByGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersAll.Designer.cs">
+      <DependentUpon>TeachersAll.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudentsAddToAGroup.resx">
+      <DependentUpon>StudentsAddToAGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsAll.resx">
+      <DependentUpon>StudentsAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudentsByGroups.resx">
+      <DependentUpon>StudentsByGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsSearch.resx">
+      <DependentUpon>StudentsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersAddEducation.resx">
+      <DependentUpon>TeachersAddEducation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersAssignGroup.resx">
+      <DependentUpon>TeachersAssignGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersAll.resx">
+      <DependentUpon>TeachersAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersByGroups.resx">
+      <DependentUpon>TeachersByGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersSearch.resx">
+      <DependentUpon>TeachersSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LanguageSchoolDataSet.xsc">
+      <DependentUpon>LanguageSchoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LanguageSchoolDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LanguageSchoolDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="LanguageSchoolDataSet.xss">
+      <DependentUpon>LanguageSchoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
