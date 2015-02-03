@@ -44,14 +44,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\ColorFactory.cs" />
+    <Compile Include="Common\CommonColors.cs" />
+    <Compile Include="Common\CommonDatabaseActions.cs" />
+    <Compile Include="Common\CommonFonts.cs" />
+    <Compile Include="Common\CommonUserInteractionMethods.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\FontFactory.cs" />
     <Compile Include="EntryPoint.cs" />
-    <Compile Include="LoginScreen.cs">
+    <Compile Include="Forms\LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginScreen.Designer.cs">
+    <Compile Include="Forms\LoginScreen.Designer.cs">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
