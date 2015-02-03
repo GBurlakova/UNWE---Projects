@@ -63,12 +63,6 @@
     <Compile Include="Common\CommonUserInteractionMethods.cs" />
     <Compile Include="Common\Constants.cs" />
     <Compile Include="Common\FontFactory.cs" />
-    <Compile Include="CrystalReport\MealsByDate.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MealsByDate.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="EntryPoint.cs" />
     <Compile Include="Forms\AboutScreen.cs">
       <SubType>Form</SubType>
@@ -167,10 +161,6 @@
       <DependentUpon>EditMeal.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CrystalReport\MealsByDate.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>MealsByDate.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AboutScreen.resx">
       <DependentUpon>AboutScreen.cs</DependentUpon>
     </EmbeddedResource>
